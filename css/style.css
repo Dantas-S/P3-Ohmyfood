@@ -67,7 +67,9 @@ html {
   background-color: #fadbd6;
   color: #410d16;
   font-family: "Kalam", cursive;
-  padding-bottom: 5em;
+  padding-bottom: 3%;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
 #menu_la-note p {
   font-size: 20px;
@@ -254,6 +256,63 @@ a {
   color: #ffce00;
   border-radius: 15px;
   font-size: 1.5em;
+}
+
+html {
+  margin: 0;
+}
+
+#menu_le-chic {
+  max-width: 851px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #FFF4FE;
+  color: #410d16;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  padding: 0 3% 10% 3%;
+}
+#menu_le-chic p {
+  font-size: 18px;
+}
+#menu_le-chic .trait {
+  width: 300px;
+}
+#menu_le-chic h2 {
+  font-size: 20px;
+}
+
+.title_le-chic {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Croissant One", cursive;
+  padding: 10% 0;
+  background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.meal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 4em;
+}
+
+#starter_lechic {
+  color: #c77529;
+}
+
+#dish_lechic {
+  color: #AF5D9B;
+  padding-bottom: 8%;
+}
+
+#dessert_lechic {
+  color: #7930D3;
 }
 
 /*# sourceMappingURL=style.css.map */
