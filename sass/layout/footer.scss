@@ -1,0 +1,19 @@
+footer {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: $background;
+    left: 0;
+    bottom: 0;
+    border-top: $border-config;
+    font-size: 1.3em;
+
+         a {
+            font-family: 'Montserrat', sans-serif;
+            color: $color-texte;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin: 1%;
+        }
+}

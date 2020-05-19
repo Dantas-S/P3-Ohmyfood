@@ -1,0 +1,17 @@
+$background: #3da087;
+$color-texte:#ffce00;
+$border-config : #97c67b solid 2px;
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $background;
+    border-bottom: $border-config;
+    a {
+        font-family: 'Padauk', sans-serif;
+        color: $color-texte;
+        font-size: 45px;
+        letter-spacing: -0.05em;
+    }
+}

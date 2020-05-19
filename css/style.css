@@ -1,9 +1,15 @@
-body {
-  margin: 0;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 header {
-  width: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: #3da087;
@@ -12,9 +18,108 @@ header {
 header a {
   font-family: "Padauk", sans-serif;
   color: #ffce00;
-  text-decoration: none;
   font-size: 45px;
   letter-spacing: -0.05em;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3da087;
+  left: 0;
+  bottom: 0;
+  border-top: #97c67b solid 2px;
+  font-size: 1.3em;
+}
+footer a {
+  font-family: "Montserrat", sans-serif;
+  color: #ffce00;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin: 1%;
+}
+
+html {
+  text-align: center;
+  font-family: "Patrick Hand";
+}
+
+.mentions_container h1, .mentions_container h2 {
+  color: #ffce00;
+}
+.mentions_container p {
+  padding: 1rem;
+  margin: 0;
+}
+
+html {
+  margin: 0;
+}
+
+#menu_la-note {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fadbd6;
+  color: #410d16;
+  font-family: "Kalam", cursive;
+  padding-bottom: 5em;
+}
+#menu_la-note p {
+  font-size: 20px;
+}
+
+.title_la-note {
+  font-size: 25px;
+  font-family: "Devonshire", cursive;
+  padding-top: 3em;
+}
+.title_la-note img {
+  width: 120px;
+  height: 100px;
+}
+.title_la-note h1 {
+  margin: 0;
+  font-size: 60px;
+}
+
+.underline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 4em;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.title_la-note-bottom {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.title_la-note-bottom img {
+  width: 80px;
+  height: 60px;
+}
+.title_la-note-bottom h1 {
+  font-size: 45px;
+  font-family: "Devonshire", cursive;
+}
+
+body {
+  margin: 0;
 }
 
 .menus {
@@ -34,32 +139,44 @@ header a {
   text-align: center;
   margin-bottom: 10%;
   box-shadow: 0px 0px 8px 6px #e8e8e8;
+}
+.menus .menu_content .transforme_menu {
   transition-property: transform, opacity;
   transition-duration: 500ms;
-  transition-delay: 700ms;
+  transition-delay: 600ms;
   transition-timing-function: linear;
 }
-.menus :hover {
-  transform: scale(1.3);
+.menus .menu_content .transforme_menu:hover {
+  transform: scale(1.1);
   opacity: 0.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fas, .fa-music {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  background: linear-gradient(to right, #ff3453 0%, #ff8c5b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu_lanote {
   background-color: #fadbd6;
   color: #410d16;
 }
-.menu_lanote img {
-  width: 35px;
-  height: 35px;
-}
 .menu_lanote h2 {
   font-family: "Devonshire", cursive;
-  margin-top: 0;
+  margin: 0;
 }
 .menu_lanote h3 {
   font-family: "Itim", cursive;
   font-style: italic;
-  font-size: 35px;
+  font-size: 2em;
 }
 
 .menu_lechic {
@@ -70,10 +187,14 @@ header a {
   background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 20px;
 }
 .menu_lechic h3 {
   font-family: "Playfair Display", serif;
+  color: #d17200;
   letter-spacing: 0.1em;
+  font-size: 2em;
+  margin-top: 0;
 }
 
 .menu_ledelice {
@@ -84,9 +205,14 @@ header a {
   background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 30px;
 }
 .menu_ledelice h3 {
   font-family: "Patrick Hand", cursive;
+  color: #007cff;
+  font-style: italic;
+  font-size: 2em;
+  margin-top: 0;
 }
 
 .menu_lapalette {
@@ -97,9 +223,14 @@ header a {
   background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 30px;
 }
 .menu_lapalette h3 {
   font-family: "Patrick Hand", cursive;
+  color: #52c749;
+  font-style: italic;
+  font-size: 2em;
+  margin-top: 0;
 }
 
 .prochainement {
@@ -115,26 +246,6 @@ header a {
   color: #ffce00;
   border-radius: 15px;
   font-size: 1.5em;
-}
-
-footer {
-  width: 100%;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  background-color: #3da087;
-  left: 0;
-  bottom: 0;
-  border-top: #97c67b solid 2px;
-  font-size: 1.3em;
-}
-footer a {
-  font-family: "Montserrat", sans-serif;
-  color: #ffce00;
-  text-decoration: none;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin: 1%;
 }
 
 /*# sourceMappingURL=style.css.map */
