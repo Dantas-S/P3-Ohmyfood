@@ -3,12 +3,13 @@ body {
 }
 
 .menus {
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     padding-top: 5%;
-    margin: auto;
+
+    .ligne1, .ligne2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .menu_content {
         width: 300px;
@@ -19,6 +20,8 @@ body {
         text-align: center;
         margin-bottom: 10%;
         box-shadow: 0px 0px 8px 6px #e8e8e8;
+
+    }
 
         .transforme_menu {
             transition-property: transform, opacity;
@@ -31,7 +34,7 @@ body {
             opacity: 0.5;
             }
         }
-    }
+
 }
 
 a {
@@ -49,9 +52,11 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
+
 .menu_lanote {
     background-color: #fadbd6;
     color: #410d16;
+    margin-right: 10%;
 
         h2 {
             font-family: 'Devonshire', cursive;
@@ -87,6 +92,7 @@ a {
 
 .menu_ledelice {
     background-color: #f9f9f9;
+    margin-right: 10%;
 
         h2 {
             font-family: 'Parisienne', cursive;
@@ -130,9 +136,9 @@ a {
 .prochainement {
     display: flex;
     justify-content: center;
-    padding-bottom: 5em;
+    padding-bottom: 5%;
 
-        button {
+        .point {
             font-family: 'Montserrat', sans-serif;
             text-align: center;
             padding: 10px 40px;
@@ -141,4 +147,5 @@ a {
             border-radius: 15px;
             font-size: 1.5em;
         }
+
 }
