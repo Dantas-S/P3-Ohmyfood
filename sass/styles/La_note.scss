@@ -3,9 +3,11 @@ html {
 }
 
 #menu_la-note {
+    max-width: 851px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: auto;
     background-color: #fadbd6;
     color: #410d16;
     font-family: 'Kalam', cursive;
@@ -14,9 +16,14 @@ html {
     p {
         font-size: 20px;
     }
+
+    .trait {
+        width: 300px;
+    }
 }
 
 .title_la-note {
+    text-align: center;
     font-size: 25px;
     font-family: 'Devonshire', cursive;
     padding-top: 3em;
@@ -32,7 +39,7 @@ html {
     }
 }
 
-.underline {
+._underline {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
