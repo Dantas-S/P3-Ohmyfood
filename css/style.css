@@ -46,6 +46,9 @@ html {
   font-family: "Patrick Hand";
 }
 
+.mentions_container {
+  padding-bottom: 4em;
+}
 .mentions_container h1, .mentions_container h2 {
   color: #ffce00;
 }
