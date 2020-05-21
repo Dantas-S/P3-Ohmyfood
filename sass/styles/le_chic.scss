@@ -9,14 +9,14 @@ html {
     flex-direction: column;
     margin: auto;
     background-color: #FFF4FE;
-    color: #410d16;
     font-family: 'Playfair Display', serif;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     margin-top: 10%;
     padding: 0 3% 10% 3%;
 
     p {
         font-size: 18px;
+        font-weight: normal;
     }
 
     .trait {
@@ -25,6 +25,7 @@ html {
 
     h2 {
         font-size: 20px;
+
     }
 }
 
