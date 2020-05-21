@@ -335,9 +335,33 @@ a {
   background-color: #3da087;
   color: #ffce00;
   border-radius: 15px;
-  font-size: 1.5em;
+  font-size: 24px;
 }
 
+@media screen and (max-width: 700px) {
+  .menus .ligne1, .menus .ligne2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu_lanote {
+    margin: 0;
+  }
+  .menu_lanote h2 {
+    font-size: 25px;
+  }
+
+  .menu_ledelice {
+    margin: 0;
+  }
+
+  .prochainement {
+    padding-bottom: 25px;
+  }
+  .prochainement .point {
+    font-size: 18px;
+  }
+}
 html {
   margin: 0;
 }
