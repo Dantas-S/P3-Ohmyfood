@@ -3,7 +3,7 @@ html {
 }
 
 #menu_le-chic {
-    max-width: 851px;
+    max-width: 835px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@ html {
 
     p {
         font-size: 18px;
-        font-weight: normal;
+        font-family: serif;
     }
 
     .trait {
@@ -39,15 +39,16 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
-.meal {
+.meal_le-chic {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 4em;
+    margin: 0 64px;
 }
 
 #starter_lechic {
-        color: #c77529;
+    color: #c77529;
+    padding-bottom: 8%;
 }
 
 #dish_lechic {
@@ -57,4 +58,68 @@ html {
 
 #dessert_lechic {
     color: #7930D3;
+}
+
+@media screen and (max-width: 925px) {
+
+    #menu_le-chic {
+        max-width: 500px;
+
+        p{
+            font-size: 15px;
+        }
+
+        .trait {
+            width: 150px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+    }
+
+    .title_le-chic {
+        font-size: 15px;
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+
+
+.meal_le-chic {
+    flex-direction: column;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 535px) {
+
+    #menu_le-chic {
+        max-width: 300px;
+        margin-bottom: 15%;
+
+        p{
+            font-size: 11px;
+            margin-top: 0;
+        }
+
+        .trait {
+            width: 80px;
+        }
+
+        h2 {
+            font-size: 12px;
+        }
+    }
+
+    .title_le-chic{
+        font-size: 10px;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
 }

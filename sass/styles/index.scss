@@ -42,6 +42,7 @@ a {
     color : inherit;
 }
 
+
  .fas,.fa-music {
 
     width: 50px;
@@ -56,7 +57,7 @@ a {
 .menu_lanote {
     background-color: #fadbd6;
     color: #410d16;
-    margin-right: 10%;
+    margin-right: 40px;
 
         h2 {
             font-family: 'Devonshire', cursive;
@@ -92,7 +93,7 @@ a {
 
 .menu_ledelice {
     background-color: #f9f9f9;
-    margin-right: 10%;
+    margin-right: 40px;
 
         h2 {
             font-family: 'Parisienne', cursive;
@@ -161,7 +162,7 @@ a {
     }
 
     .menu_lanote {
-        margin: 0;
+        margin-right: 0;
 
         h2{
             font-size: 25px;
@@ -169,7 +170,7 @@ a {
     }
 
     .menu_ledelice {
-        margin: 0;
+        margin-right: 0;
     }
 
     .prochainement {
@@ -179,5 +180,9 @@ a {
         .point {
             font-size: 18px;
         }
+    }
+
+    .link {
+        margin-right: 0;
     }
 }

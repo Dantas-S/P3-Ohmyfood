@@ -111,9 +111,13 @@ html {
   justify-content: space-between;
   margin: 0 50px;
 }
+.meal_la-note .price {
+  font-weight: bold;
+}
 
 h2 {
   font-size: 35px;
+  font-weight: normal;
 }
 
 .title_la-note-bottom {
@@ -131,7 +135,7 @@ h2 {
   font-family: "Devonshire", cursive;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 857px) {
   #menu_la-note {
     max-width: 500px;
   }
@@ -172,11 +176,11 @@ h2 {
 }
 @media screen and (max-width: 500px) {
   #menu_la-note {
-    max-width: 280px;
+    max-width: 300px;
     margin-bottom: 15%;
   }
   #menu_la-note p {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 0;
   }
   #menu_la-note .trait {
@@ -256,7 +260,7 @@ a {
 .menu_lanote {
   background-color: #fadbd6;
   color: #410d16;
-  margin-right: 10%;
+  margin-right: 40px;
 }
 .menu_lanote h2 {
   font-family: "Devonshire", cursive;
@@ -288,7 +292,7 @@ a {
 
 .menu_ledelice {
   background-color: #f9f9f9;
-  margin-right: 10%;
+  margin-right: 40px;
 }
 .menu_ledelice h2 {
   font-family: "Parisienne", cursive;
@@ -345,14 +349,14 @@ a {
   }
 
   .menu_lanote {
-    margin: 0;
+    margin-right: 0;
   }
   .menu_lanote h2 {
     font-size: 25px;
   }
 
   .menu_ledelice {
-    margin: 0;
+    margin-right: 0;
   }
 
   .prochainement {
@@ -361,13 +365,17 @@ a {
   .prochainement .point {
     font-size: 18px;
   }
+
+  .link {
+    margin-right: 0;
+  }
 }
 html {
   margin: 0;
 }
 
 #menu_le-chic {
-  max-width: 851px;
+  max-width: 835px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -380,7 +388,7 @@ html {
 }
 #menu_le-chic p {
   font-size: 18px;
-  font-weight: normal;
+  font-family: serif;
 }
 #menu_le-chic .trait {
   width: 300px;
@@ -399,15 +407,16 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-.meal {
+.meal_le-chic {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 4em;
+  margin: 0 64px;
 }
 
 #starter_lechic {
   color: #c77529;
+  padding-bottom: 8%;
 }
 
 #dish_lechic {
@@ -419,6 +428,55 @@ html {
   color: #7930D3;
 }
 
+@media screen and (max-width: 925px) {
+  #menu_le-chic {
+    max-width: 500px;
+  }
+  #menu_le-chic p {
+    font-size: 15px;
+  }
+  #menu_le-chic .trait {
+    width: 150px;
+  }
+  #menu_le-chic h2 {
+    font-size: 16px;
+  }
+
+  .title_le-chic {
+    font-size: 15px;
+  }
+  .title_le-chic h1 {
+    font-size: 40px;
+  }
+
+  .meal_le-chic {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 535px) {
+  #menu_le-chic {
+    max-width: 300px;
+    margin-bottom: 15%;
+  }
+  #menu_le-chic p {
+    font-size: 11px;
+    margin-top: 0;
+  }
+  #menu_le-chic .trait {
+    width: 80px;
+  }
+  #menu_le-chic h2 {
+    font-size: 12px;
+  }
+
+  .title_le-chic {
+    font-size: 10px;
+  }
+  .title_le-chic h1 {
+    font-size: 30px;
+  }
+}
 html {
   margin: 0;
 }
