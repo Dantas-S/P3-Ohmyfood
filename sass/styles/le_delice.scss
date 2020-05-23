@@ -44,3 +44,67 @@ html {
     justify-content: space-between;
     margin: 0 6em;
 }
+
+@media screen and (max-width: 925px) {
+
+    #menu_le-delice{
+        max-width: 500px;
+
+        p{
+            font-size: 15px;
+        }
+
+        .trait {
+            width: 150px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+    }
+
+    .title_le-delice {
+        font-size: 15px;
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+
+
+.meal_le-chic {
+    flex-direction: column;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 535px) {
+
+    #menu_le-delice {
+        max-width: 300px;
+        margin-bottom: 15%;
+
+        p{
+            font-size: 11px;
+            margin-top: 0;
+        }
+
+        .trait {
+            width: 80px;
+        }
+
+        h2 {
+            font-size: 12px;
+        }
+    }
+
+    .title_le-delice{
+        font-size: 10px;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+}

@@ -18,7 +18,7 @@ header {
 header a {
   font-family: "Padauk", sans-serif;
   color: #ffce00;
-  font-size: 45px;
+  font-size: 50px;
   letter-spacing: -0.05em;
 }
 
@@ -113,11 +113,6 @@ html {
 }
 .meal_la-note .price {
   font-weight: bold;
-}
-
-h2 {
-  font-size: 35px;
-  font-weight: normal;
 }
 
 .title_la-note-bottom {
@@ -520,6 +515,55 @@ html {
   margin: 0 6em;
 }
 
+@media screen and (max-width: 925px) {
+  #menu_le-delice {
+    max-width: 500px;
+  }
+  #menu_le-delice p {
+    font-size: 15px;
+  }
+  #menu_le-delice .trait {
+    width: 150px;
+  }
+  #menu_le-delice h2 {
+    font-size: 16px;
+  }
+
+  .title_le-delice {
+    font-size: 15px;
+  }
+  .title_le-delice h1 {
+    font-size: 40px;
+  }
+
+  .meal_le-chic {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 535px) {
+  #menu_le-delice {
+    max-width: 300px;
+    margin-bottom: 15%;
+  }
+  #menu_le-delice p {
+    font-size: 11px;
+    margin-top: 0;
+  }
+  #menu_le-delice .trait {
+    width: 80px;
+  }
+  #menu_le-delice h2 {
+    font-size: 12px;
+  }
+
+  .title_le-delice {
+    font-size: 10px;
+  }
+  .title_le-delice h1 {
+    font-size: 30px;
+  }
+}
 html {
   margin: 0;
 }
@@ -556,11 +600,61 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-.meal {
+.meal_la-palette {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 6em;
+}
+
+@media screen and (max-width: 925px) {
+  #menu_la-palette {
+    max-width: 500px;
+  }
+  #menu_la-palette p {
+    font-size: 15px;
+  }
+  #menu_la-palette .trait {
+    width: 150px;
+  }
+  #menu_la-palette h2 {
+    font-size: 16px;
+  }
+
+  .title_la-palette {
+    font-size: 15px;
+  }
+  .title_la-palette h1 {
+    font-size: 40px;
+  }
+
+  .meal_la-palette {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 535px) {
+  #menu_la-palette {
+    max-width: 300px;
+    margin-bottom: 15%;
+  }
+  #menu_la-palette p {
+    font-size: 11px;
+    margin-top: 0;
+  }
+  #menu_la-palette .trait {
+    width: 80px;
+  }
+  #menu_la-palette h2 {
+    font-size: 12px;
+  }
+
+  .title_la-palette {
+    font-size: 10px;
+  }
+  .title_la-palette h1 {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
