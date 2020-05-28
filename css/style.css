@@ -460,7 +460,7 @@ html {
   font-size: 30px;
   font-family: "Croissant One", cursive;
   padding: 10% 0;
-  background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
+  background: linear-gradient(to right, #c77529 0%, #8f5bfe 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
