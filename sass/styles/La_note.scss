@@ -41,12 +41,23 @@ html {
     }
 }
 
-._underline {
+._underline_la-note {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
+
+    ._anim-line-la-note {
+        font-weight: normal;
+        background: linear-gradient(to top, #000000 2px, transparent 2px) no-repeat;
+        background-size: 0% 100%;
+        transition: background-size 1s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+}
 
 
 .meal_la-note {
@@ -54,8 +65,8 @@ html {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 50px;
-
-    .price{
+    
+    ._price{
         font-weight: bold;
     }
 }
@@ -65,12 +76,12 @@ html {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-
+    
     img {
         width: 80px;
         height: 60px;
     }
-
+    
     h1 {
         font-size: 45px;
         font-family: 'Devonshire', cursive;
@@ -78,94 +89,95 @@ html {
 }
 
 @media screen and (max-width: 857px) {
-
+    
     #menu_la-note {
         max-width: 500px;
-
+        
         p{
             font-size: 15px;
         }
-
+        
         .trait {
             width: 150px;
         }
     }
-
+    
     .title_la-note {
         font-size: 15px;
-
+        
         img {
             width: 80px;
             height: 60px;
         }
-
+        
         h1 {
             font-size: 40px;
         }
     }
-
-h2 {
-    font-size: 25px;
-}
-
-.meal_la-note {
-    flex-direction: column;
-    text-align: center;
-}
-
+    
+    h2 {
+        font-size: 25px;
+    }
+    
+    .meal_la-note {
+        flex-direction: column;
+        text-align: center;
+    }
+    
     .title_la-note-bottom {
-
+        
         img {
-        width: 80px;
-        height: 60px;
+            width: 80px;
+            height: 60px;
         }
-
+        
         h1 {
             font-size: 30px;
         }
+        
     }
 }
 
 @media screen and (max-width: 500px) {
-
+    
     #menu_la-note {
         max-width: 300px;
         margin-bottom: 15%;
-
-        p{
+        
+        p {
             font-size: 12px;
             margin-top: 0;
         }
-
+        
         .trait {
             width: 80px;
         }
     }
-
+    
     .title_la-note {
         font-size: 10px;
-
+        
         img {
             width: 60px;
             height: 40px;
         }
-
+        
         h1 {
             font-size: 30px;
         }
     }
-
-h2 {
-    font-size: 15px;
-}
-
+    
+    h2 {
+        font-size: 15px;
+    }
+    
     .title_la-note-bottom {
-
+        
         img {
-        width: 50px;
-        height: 30px;
+            width: 50px;
+            height: 30px;
         }
-
+        
         h1 {
             font-size: 20px;
         }

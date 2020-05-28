@@ -2,7 +2,7 @@ html {
     margin: 0;
 }
 
-#menu_le-delice{
+#menu_le-delice {
     max-width: 851px;
     width: 100%;
     display: flex;
@@ -38,7 +38,25 @@ html {
 
 }
 
-.meal {
+._underline_le-delice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    ._anim-line-le-delice {
+        font-weight: normal;
+        background: linear-gradient(to top, #0887fb 2px, transparent 2px) no-repeat;
+        background-size: 0% 100%;
+        transition: background-size 1s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+}
+
+.meal_le-delice {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -73,7 +91,7 @@ html {
 
 
 
-.meal_le-chic {
+.meal_le-delice {
     flex-direction: column;
     text-align: center;
 }

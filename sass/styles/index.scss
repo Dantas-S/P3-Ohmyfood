@@ -4,13 +4,13 @@ body {
 
 .menus {
     padding-top: 5%;
-
+    
     .ligne1, .ligne2 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
+    
     .menu_content {
         width: 300px;
         height: 400px;
@@ -20,21 +20,18 @@ body {
         text-align: center;
         margin-bottom: 10%;
         box-shadow: 0px 0px 8px 6px #e8e8e8;
-
     }
-
-        .transforme_menu {
-            transition-property: transform, opacity;
-            transition-duration: 500ms;
-            transition-delay: 600ms;
-            transition-timing-function: linear;
-
+    .transforme_menu {
+        transition-property: transform, opacity;
+        transition-duration: 500ms;
+        transition-delay: 600ms;
+        transition-timing-function: linear;
+        
         &:hover {
             transform: scale(1.1);
             opacity: 0.5;
-            }
         }
-
+    }
 }
 
 a {
@@ -43,8 +40,7 @@ a {
 }
 
 
- .fas,.fa-music {
-
+.fas,.fa-music {
     width: 50px;
     height: 50px;
     font-size: 40px;
@@ -58,138 +54,144 @@ a {
     background-color: #fadbd6;
     color: #410d16;
     margin-right: 40px;
-
-        h2 {
-            font-family: 'Devonshire', cursive;
-            margin: 0;
-            font-size: 30px;
-        }
-
-        h3 {
-            font-family: 'Itim', cursive;
-            font-style: italic;
-            font-size: 2em;
-        }
+    
+    h2 {
+        font-family: 'Devonshire', cursive;
+        margin: 0;
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-family: 'Itim', cursive;
+        font-style: italic;
+        font-size: 2em;
+    }
 }
 
 .menu_lechic {
     background-color: #fff4fe;
-
-        h2{
-            font-family: 'Croissant One', cursive;
-            background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 20px;
-        }
-
-        h3 {
-            font-family: 'Playfair Display', serif;
-            color: #d17200;
-            letter-spacing: 0.1em;
-            font-size: 2em;
-            margin-top: 0;
-        }
+    
+    h2{
+        font-family: 'Croissant One', cursive;
+        background: linear-gradient(to right, #c77529 0%, #8f5bfe 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-family: 'Playfair Display', serif;
+        color: #d17200;
+        letter-spacing: 0.1em;
+        font-size: 2em;
+        margin-top: 0;
+    }
 }
 
 .menu_ledelice {
     background-color: #f9f9f9;
     margin-right: 40px;
-
-        h2 {
-            font-family: 'Parisienne', cursive;
-            background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 30px;
-        }
-
-        h3 {
-            font-family: 'Patrick Hand', cursive;
-            color: #007cff;
-            font-style: italic;
-            font-size: 2em;
-            margin-top: 0;
-
-        }
+    
+    h2 {
+        font-family: 'Parisienne', cursive;
+        background: linear-gradient(to right, #0431df 0%, #0887fb 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-family: 'Patrick Hand', cursive;
+        color: #007cff;
+        font-style: italic;
+        font-size: 2em;
+        margin-top: 0;
+    }
 }
 
 .menu_lapalette {
     background-color: #fdfffd;
-
-        h2 {
+    
+    h2 {
         font-family: 'Kaushan Script', cursive;
-        background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
+        background: linear-gradient(to right, #3d9339 0%, #c0fd87 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 30px;
-        }
-
-        h3 {
-            font-family: 'Patrick Hand', cursive;
-            color: #52c749;
-            font-style: italic;
-            font-size: 2em;
-            margin-top: 0;
-
-        }
+    }
+    
+    h3 {
+        font-family: 'Patrick Hand', cursive;
+        color: #52c749;
+        font-style: italic;
+        font-size: 2em;
+        margin-top: 0;
+    }
 }
 
 .prochainement {
     display: flex;
     justify-content: center;
     padding-bottom: 7%;
-
-        .point {
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            padding: 10px 40px;
-            background-color: $background;
-            color: $color-texte;
-            border-radius: 15px;
-            font-size: 24px;
-
-        &:after {
-            display: outside;
-            animation: dotty steps(1,end) 3s infinite;
-            content: '';
-              }
-              
-        @keyframes dotty {
-            0%   { content: ''; }
-            25%  { content: '.'; }
-            50%  { content: '..'; }
-            75%  { content: '...'; }
-            100% { content: ''; }
-            }
+    
+    .point {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding: 10px 40px;
+        background-color: $background;
+        color: $color-texte;
+        border-radius: 15px;
+        font-size: 24px;
+    }
+    
+    #point1 {
+        animation: apparition 1500ms infinite;
+    }
+    
+    #point2 {
+        animation: apparition 1600ms infinite;
+    }
+    
+    #point3 {
+        animation: apparition 1700ms infinite;
+    }
+    
+    @keyframes apparition {
+        
+        0% {
+            opacity: 0;
         }
+        
+        100% {
+            opacity: 1;
+        }
+        
+    }
 }
 
 @media screen and (max-width: 700px) {
-
-    .menus {
-        .ligne1, .ligne2 {
-            display: flex;
-            flex-direction: column;
-        }
+    
+    .ligne1, .ligne2 {
+        display: flex;
+        flex-direction: column;
     }
-
+    
     .menu_lanote {
         margin-right: 0;
     }
-
+    
     .menu_ledelice {
         margin-right: 0;
     }
-
+    
     .prochainement {
         padding-bottom: 15%;
-
+        
         .point {
             font-size: 18px;
         }
     }
-
+    
     .link {
         margin-right: 0;
     }

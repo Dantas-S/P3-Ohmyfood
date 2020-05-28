@@ -36,15 +36,15 @@ footer {
 footer a {
   font-family: "Montserrat", sans-serif;
   color: #ffce00;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin: 1%;
 }
 footer a:hover {
-  animation: shake 0.5s;
+  animation: wiggle 1s;
   animation-iteration-count: infinite;
 }
-@keyframes shake {
+@keyframes wiggle {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
   }
@@ -137,11 +137,20 @@ html {
   font-size: 60px;
 }
 
-._underline {
+._underline_la-note {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+._underline_la-note ._anim-line-la-note {
+  font-weight: normal;
+  background: linear-gradient(to top, #000000 2px, transparent 2px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 1s;
+}
+._underline_la-note ._anim-line-la-note:hover {
+  background-size: 100% 100%;
 }
 
 .meal_la-note {
@@ -150,7 +159,7 @@ html {
   justify-content: space-between;
   margin: 0 50px;
 }
-.meal_la-note .price {
+.meal_la-note ._price {
   font-weight: bold;
 }
 
@@ -312,7 +321,7 @@ a {
 }
 .menu_lechic h2 {
   font-family: "Croissant One", cursive;
-  background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
+  background: linear-gradient(to right, #c77529 0%, #8f5bfe 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
@@ -331,7 +340,7 @@ a {
 }
 .menu_ledelice h2 {
   font-family: "Parisienne", cursive;
-  background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
+  background: linear-gradient(to right, #0431df 0%, #0887fb 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px;
@@ -349,7 +358,7 @@ a {
 }
 .menu_lapalette h2 {
   font-family: "Kaushan Script", cursive;
-  background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
+  background: linear-gradient(to right, #3d9339 0%, #c0fd87 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px;
@@ -376,31 +385,26 @@ a {
   border-radius: 15px;
   font-size: 24px;
 }
-.prochainement .point:after {
-  display: outside;
-  animation: dotty steps(1, end) 3s infinite;
-  content: "";
+.prochainement #point1 {
+  animation: apparition 1500ms infinite;
 }
-@keyframes dotty {
+.prochainement #point2 {
+  animation: apparition 1600ms infinite;
+}
+.prochainement #point3 {
+  animation: apparition 1700ms infinite;
+}
+@keyframes apparition {
   0% {
-    content: "";
-  }
-  25% {
-    content: ".";
-  }
-  50% {
-    content: "..";
-  }
-  75% {
-    content: "...";
+    opacity: 0;
   }
   100% {
-    content: "";
+    opacity: 1;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .menus .ligne1, .menus .ligne2 {
+  .ligne1, .ligne2 {
     display: flex;
     flex-direction: column;
   }
@@ -461,6 +465,13 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+._underline_le-chic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .meal_le-chic {
   display: flex;
   flex-direction: row;
@@ -472,14 +483,41 @@ html {
   color: #c77529;
   padding-bottom: 8%;
 }
+#starter_lechic ._anim-line-le-chic {
+  font-weight: normal;
+  background: linear-gradient(to top, #c77529 2px, transparent 2px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 1s;
+}
+#starter_lechic ._anim-line-le-chic:hover {
+  background-size: 100% 100%;
+}
 
 #dish_lechic {
   color: #AF5D9B;
   padding-bottom: 8%;
 }
+#dish_lechic ._anim-line-le-chic {
+  font-weight: normal;
+  background: linear-gradient(to top, #AF5D9B 2px, transparent 2px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 1s;
+}
+#dish_lechic ._anim-line-le-chic:hover {
+  background-size: 100% 100%;
+}
 
 #dessert_lechic {
   color: #7930D3;
+}
+#dessert_lechic ._anim-line-le-chic {
+  font-weight: normal;
+  background: linear-gradient(to top, #7930D3 2px, transparent 2px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 1s;
+}
+#dessert_lechic ._anim-line-le-chic:hover {
+  background-size: 100% 100%;
 }
 
 @media screen and (max-width: 925px) {
@@ -567,7 +605,23 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-.meal {
+._underline_le-delice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+._underline_le-delice ._anim-line-le-delice {
+  font-weight: normal;
+  background: linear-gradient(to top, #0887fb 2px, transparent 2px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 1s;
+}
+._underline_le-delice ._anim-line-le-delice:hover {
+  background-size: 100% 100%;
+}
+
+.meal_le-delice {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -595,7 +649,7 @@ html {
     font-size: 40px;
   }
 
-  .meal_le-chic {
+  .meal_le-delice {
     flex-direction: column;
     text-align: center;
   }
@@ -659,6 +713,22 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+._underline_la-palette {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+._underline_la-palette ._anim-line-la-palette {
+  font-weight: normal;
+  background: linear-gradient(to top, #3d9339 2px, transparent 2px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 1s;
+}
+._underline_la-palette ._anim-line-la-palette:hover {
+  background-size: 100% 100%;
+}
+
 .meal_la-palette {
   display: flex;
   flex-direction: row;
@@ -686,12 +756,12 @@ html {
   .title_la-palette h1 {
     font-size: 40px;
   }
-
-  .meal_la-palette {
-    flex-direction: column;
-    text-align: center;
-  }
 }
+.meal_la-palette {
+  flex-direction: column;
+  text-align: center;
+}
+
 @media screen and (max-width: 535px) {
   #menu_la-palette {
     max-width: 300px;

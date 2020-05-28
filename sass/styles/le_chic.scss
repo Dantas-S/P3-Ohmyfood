@@ -13,16 +13,16 @@ html {
     margin-bottom: 10%;
     margin-top: 5%;
     padding: 0 3% 10% 3%;
-
+    
     p {
         font-size: 18px;
         font-family: serif;
     }
-
+    
     .trait {
         width: 300px;
     }
-
+    
     h2 {
         font-size: 20px;
 
@@ -39,6 +39,13 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
+._underline_le-chic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .meal_le-chic {
     display: flex;
     flex-direction: row;
@@ -49,77 +56,109 @@ html {
 #starter_lechic {
     color: #c77529;
     padding-bottom: 8%;
-}
 
+    ._anim-line-le-chic {
+        font-weight: normal;
+        background: linear-gradient(to top, #c77529 2px, transparent 2px) no-repeat;
+        background-size: 0% 100%;
+        transition: background-size 1s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+}
 #dish_lechic {
     color: #AF5D9B;
     padding-bottom: 8%;
+
+    ._anim-line-le-chic {
+        font-weight: normal;
+        background: linear-gradient(to top, #AF5D9B 2px, transparent 2px) no-repeat;
+        background-size: 0% 100%;
+        transition: background-size 1s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
 }
 
 #dessert_lechic {
     color: #7930D3;
+
+    ._anim-line-le-chic {
+        font-weight: normal;
+        background: linear-gradient(to top, #7930D3 2px, transparent 2px) no-repeat;
+        background-size: 0% 100%;
+        transition: background-size 1s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 925px) {
-
+    
     #menu_le-chic {
         max-width: 500px;
-
+        
         p{
             font-size: 15px;
         }
-
+        
         .trait {
             width: 150px;
         }
-
+        
         h2 {
             font-size: 16px;
         }
     }
-
+    
     .title_le-chic {
         font-size: 15px;
-
+        
         h1 {
             font-size: 40px;
         }
     }
-
-
-
-.meal_le-chic {
-    flex-direction: column;
-    text-align: center;
-}
+    
+    
+    
+    .meal_le-chic {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 535px) {
-
+    
     #menu_le-chic {
         max-width: 300px;
         margin-bottom: 15%;
-
+        
         p{
             font-size: 11px;
             margin-top: 0;
         }
-
+        
         .trait {
             width: 80px;
         }
-
+        
         h2 {
             font-size: 12px;
         }
     }
-
+    
     .title_le-chic{
         font-size: 10px;
-
+        
         h1 {
             font-size: 30px;
         }
     }
-
+    
 }
