@@ -376,7 +376,7 @@ a {
   justify-content: center;
   padding-bottom: 7%;
 }
-.prochainement .point {
+.prochainement .prochainement_box {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   padding: 10px 40px;
@@ -385,14 +385,14 @@ a {
   border-radius: 15px;
   font-size: 24px;
 }
-.prochainement #point1 {
-  animation: apparition 1500ms infinite;
+.prochainement .prochainement_box span {
+  animation: apparition 1.5s infinite;
 }
-.prochainement #point2 {
-  animation: apparition 1600ms infinite;
+.prochainement .prochainement_box :nth-child(2) {
+  animation-delay: 0.3s;
 }
-.prochainement #point3 {
-  animation: apparition 1700ms infinite;
+.prochainement .prochainement_box :nth-child(3) {
+  animation-delay: 0.4s;
 }
 @keyframes apparition {
   0% {
@@ -581,7 +581,7 @@ html {
   margin: auto;
   background-color: #EDEFEF;
   font-family: "Kalam", cursive;
-  padding-bottom: 3%;
+  padding: 3%;
   margin-bottom: 10%;
   margin-top: 5%;
 }
@@ -689,9 +689,10 @@ html {
   margin: auto;
   background-color: #FDFFFD;
   font-family: "Kalam", cursive;
-  padding-bottom: 3%;
+  padding: 3%;
   margin-bottom: 10%;
   margin-top: 5%;
+  box-shadow: 0px 0px 2px 5px #e8e8e8;
 }
 #menu_la-palette p {
   font-size: 18px;
@@ -708,7 +709,7 @@ html {
   text-align: center;
   font-size: 50px;
   font-family: "Kaushan Script", cursive;
-  background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
+  background: linear-gradient(to right, #3d9339 0%, #c0fd87 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -756,12 +757,12 @@ html {
   .title_la-palette h1 {
     font-size: 40px;
   }
-}
-.meal_la-palette {
-  flex-direction: column;
-  text-align: center;
-}
 
+  .meal_la-palette {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 535px) {
   #menu_la-palette {
     max-width: 300px;

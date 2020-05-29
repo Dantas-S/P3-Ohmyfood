@@ -134,7 +134,7 @@ a {
     justify-content: center;
     padding-bottom: 7%;
     
-    .point {
+    .prochainement_box {
         font-family: 'Montserrat', sans-serif;
         text-align: center;
         padding: 10px 40px;
@@ -142,30 +142,32 @@ a {
         color: $color-texte;
         border-radius: 15px;
         font-size: 24px;
-    }
+
     
-    #point1 {
-        animation: apparition 1500ms infinite;
-    }
-    
-    #point2 {
-        animation: apparition 1600ms infinite;
-    }
-    
-    #point3 {
-        animation: apparition 1700ms infinite;
-    }
-    
-    @keyframes apparition {
-        
-        0% {
-            opacity: 0;
+        span {
+            animation: apparition 1.5s infinite;
         }
         
-        100% {
-            opacity: 1;
+        :nth-child(2) {
+            animation-delay: 0.3s;
+
         }
         
+        :nth-child(3) {
+            animation-delay: 0.4s;
+        }
+    
+        @keyframes apparition {
+        
+            0% {
+                opacity: 0;
+            }
+            
+            100% {
+                opacity: 1;
+            }
+        
+        }
     }
 }
 
