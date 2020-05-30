@@ -13,19 +13,13 @@ html {
     margin-bottom: 10%;
     margin-top: 5%;
     padding: 0 3% 10% 3%;
+        
+    .trait {
+        width: 250px;
+    }
     
     p {
-        font-size: 18px;
-        font-family: serif;
-    }
-    
-    .trait {
-        width: 300px;
-    }
-    
-    h2 {
         font-size: 20px;
-
     }
 }
 
@@ -105,7 +99,7 @@ html {
         max-width: 500px;
         
         p{
-            font-size: 15px;
+            font-size: 14px;
         }
         
         .trait {
@@ -113,20 +107,14 @@ html {
         }
         
         h2 {
-            font-size: 16px;
+            font-size: 35px;
+        }
+
+        h3 {
+            font-size: 17px;
         }
     }
-    
-    .title_le-chic {
-        font-size: 15px;
-        
-        h1 {
-            font-size: 40px;
-        }
-    }
-    
-    
-    
+
     .meal_le-chic {
         flex-direction: column;
         text-align: center;
@@ -139,8 +127,8 @@ html {
         max-width: 300px;
         margin-bottom: 15%;
         
-        p{
-            font-size: 11px;
+        p {
+            font-size: 10px;
             margin-top: 0;
         }
         
@@ -149,15 +137,11 @@ html {
         }
         
         h2 {
-            font-size: 12px;
+            font-size: 25px;
         }
-    }
-    
-    .title_le-chic{
-        font-size: 10px;
-        
-        h1 {
-            font-size: 30px;
+
+        h3 {
+            font-size: 12px;
         }
     }
     

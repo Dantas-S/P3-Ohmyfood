@@ -21,16 +21,11 @@ html {
     .trait {
         width: 300px;
     }
-
-    h2 {
-        font-size: 25px;
-        font-weight: normal;
-    }
 }
 
 .title_le-delice {
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     font-family: 'Parisienne', cursive;
     background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
     -webkit-background-clip: text;
@@ -60,7 +55,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 6em;
+    margin: 0 64px;
 }
 
 @media screen and (max-width: 925px) {
@@ -68,8 +63,8 @@ html {
     #menu_le-delice{
         max-width: 500px;
 
-        p{
-            font-size: 15px;
+        p {
+            font-size: 14px;
         }
 
         .trait {
@@ -77,19 +72,13 @@ html {
         }
 
         h2 {
-            font-size: 16px;
+            font-size: 35px;
+        }
+
+        h3 {
+            font-size: 17px;
         }
     }
-
-    .title_le-delice {
-        font-size: 15px;
-
-        h1 {
-            font-size: 40px;
-        }
-    }
-
-
 
 .meal_le-delice {
     flex-direction: column;
@@ -103,8 +92,8 @@ html {
         max-width: 300px;
         margin-bottom: 15%;
 
-        p{
-            font-size: 11px;
+        p {
+            font-size: 10px;
             margin-top: 0;
         }
 
@@ -113,16 +102,11 @@ html {
         }
 
         h2 {
+            font-size: 25px;
+        }
+
+        h3 {
             font-size: 12px;
         }
     }
-
-    .title_le-delice{
-        font-size: 10px;
-
-        h1 {
-            font-size: 30px;
-        }
-    }
-
 }

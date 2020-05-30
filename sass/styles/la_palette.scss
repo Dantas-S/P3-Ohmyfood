@@ -15,17 +15,17 @@ html {
     margin-top: 5%;
     box-shadow: 0px 0px 2px 5px #e8e8e8;
 
-    p {
-        font-size: 18px;
-    }
-
     .trait {
         width: 300px;
     }
 
     h2 {
-        font-size: 25px;
+        font-size: 60px;
         font-weight: normal;
+    }
+
+    h3{
+        font-size: 25px;
     }
 }
 
@@ -76,16 +76,8 @@ html {
             width: 150px;
         }
 
-        h2 {
-            font-size: 16px;
-        }
-    }
-
-    .title_la-palette {
-        font-size: 15px;
-
-        h1 {
-            font-size: 40px;
+        h3 {
+            font-size: 20px;
         }
     }
 
@@ -94,8 +86,6 @@ html {
         text-align: center;
     }
 }
-
-
 
 @media screen and (max-width: 535px) {
 
@@ -113,15 +103,11 @@ html {
         }
 
         h2 {
-            font-size: 12px;
+            font-size: 25px;
         }
-    }
 
-    .title_la-palette{
-        font-size: 10px;
-
-        h1 {
-            font-size: 30px;
+        h3 {
+            font-size: 15px;
         }
     }
 }
