@@ -98,7 +98,7 @@ html {
     #menu_le-chic {
         max-width: 500px;
         
-        p{
+        p {
             font-size: 14px;
         }
         
@@ -116,8 +116,7 @@ html {
     }
 
     .meal_le-chic {
-        flex-direction: column;
-        text-align: center;
+        margin: 0 1em;
     }
 }
 
@@ -144,5 +143,9 @@ html {
             font-size: 12px;
         }
     }
-    
+
+    .meal_le-chic{
+        flex-direction: column;
+        text-align: center;
+    }
 }

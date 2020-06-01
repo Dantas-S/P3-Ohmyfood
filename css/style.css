@@ -201,11 +201,6 @@ html {
     font-size: 40px;
   }
 
-  .meal_la-note {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .title_la-note-bottom img {
     width: 80px;
     height: 60px;
@@ -239,6 +234,11 @@ html {
   }
   .title_la-note h2 {
     font-size: 30px;
+  }
+
+  .meal_la-note {
+    flex-direction: column;
+    text-align: center;
   }
 
   .title_la-note-bottom img {
@@ -530,8 +530,7 @@ html {
   }
 
   .meal_le-chic {
-    flex-direction: column;
-    text-align: center;
+    margin: 0 1em;
   }
 }
 @media screen and (max-width: 535px) {
@@ -551,6 +550,11 @@ html {
   }
   #menu_le-chic h3 {
     font-size: 12px;
+  }
+
+  .meal_le-chic {
+    flex-direction: column;
+    text-align: center;
   }
 }
 html {
@@ -626,8 +630,7 @@ html {
   }
 
   .meal_le-delice {
-    flex-direction: column;
-    text-align: center;
+    margin: 0;
   }
 }
 @media screen and (max-width: 535px) {
@@ -647,6 +650,11 @@ html {
   }
   #menu_le-delice h3 {
     font-size: 12px;
+  }
+
+  .meal_le-delice {
+    flex-direction: column;
+    text-align: center;
   }
 }
 html {
@@ -724,8 +732,7 @@ html {
   }
 
   .meal_la-palette {
-    flex-direction: column;
-    text-align: center;
+    margin: 0;
   }
 }
 @media screen and (max-width: 535px) {
@@ -745,6 +752,11 @@ html {
   }
   #menu_la-palette h3 {
     font-size: 15px;
+  }
+
+  .meal_la-palette {
+    flex-direction: column;
+    text-align: center;
   }
 }
 

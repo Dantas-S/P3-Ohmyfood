@@ -80,10 +80,9 @@ html {
         }
     }
 
-.meal_le-delice {
-    flex-direction: column;
-    text-align: center;
-}
+    .meal_le-delice {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 535px) {
@@ -108,5 +107,10 @@ html {
         h3 {
             font-size: 12px;
         }
+    }
+
+    .meal_le-delice {
+        flex-direction: column;
+        text-align: center;
     }
 }

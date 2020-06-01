@@ -82,8 +82,7 @@ html {
     }
 
     .meal_la-palette {
-        flex-direction: column;
-        text-align: center;
+        margin: 0;
     }
 }
 
@@ -110,4 +109,10 @@ html {
             font-size: 15px;
         }
     }
+
+    .meal_la-palette {
+        flex-direction: column;
+        text-align: center;
+    }
 }
+

@@ -115,11 +115,6 @@
             }
         }
         
-        .meal_la-note {
-            flex-direction: column;
-            text-align: center;
-        }
-        
         .title_la-note-bottom {
             
             img {
@@ -165,6 +160,11 @@
             h2 {
                 font-size: 30px;
             }
+        }
+
+        .meal_la-note {
+            flex-direction: column;
+            text-align: center;
         }
         
         .title_la-note-bottom {
