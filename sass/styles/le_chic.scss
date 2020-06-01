@@ -1,18 +1,12 @@
-html {
-    margin: 0;
+body {
+    margin: $margin;
 }
 
 #menu_le-chic {
+    @include menus;
     max-width: 835px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
     background-color: #FFF4FE;
     font-family: 'Playfair Display', serif;
-    margin-bottom: 10%;
-    margin-top: 5%;
-    padding: 0 3% 10% 3%;
         
     .trait {
         width: 250px;
@@ -34,17 +28,11 @@ html {
 }
 
 ._underline_le-chic {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include underline_menu;
 }
 
 .meal_le-chic {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 64px;
+    @include meal;
 }
 
 #starter_lechic {
@@ -96,56 +84,21 @@ html {
 @media screen and (max-width: 925px) {
     
     #menu_le-chic {
-        max-width: 500px;
-        
-        p {
-            font-size: 14px;
-        }
-        
-        .trait {
-            width: 150px;
-        }
-        
-        h2 {
-            font-size: 35px;
-        }
-
-        h3 {
-            font-size: 17px;
-        }
+        @include menu_925;
     }
 
     .meal_le-chic {
-        margin: 0 1em;
+        margin: $margin;
     }
 }
 
 @media screen and (max-width: 535px) {
     
     #menu_le-chic {
-        max-width: 300px;
-        margin-bottom: 15%;
-        
-        p {
-            font-size: 10px;
-            margin-top: 0;
-        }
-        
-        .trait {
-            width: 80px;
-        }
-        
-        h2 {
-            font-size: 25px;
-        }
-
-        h3 {
-            font-size: 12px;
-        }
+        @include menu_535;
     }
 
     .meal_le-chic{
-        flex-direction: column;
-        text-align: center;
+        @include meal_535;
     }
 }

@@ -1,18 +1,11 @@
-html {
-    margin: 0;
+body {
+    margin: $margin;
 }
 
 #menu_le-delice {
-    max-width: 851px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    background-color: #EDEFEF;
+    @include menus;
+    background-color: #f9f9f9;
     font-family: 'Kalam', cursive;
-    padding: 3%;
-    margin-bottom: 10%;
-    margin-top: 5%;
 
     p {
         font-size: 18px;
@@ -34,10 +27,7 @@ html {
 }
 
 ._underline_le-delice {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include underline_menu;
 
     ._anim-line-le-delice {
         font-weight: normal;
@@ -52,65 +42,27 @@ html {
 }
 
 .meal_le-delice {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 64px;
+    @include meal;
 }
 
-@media screen and (max-width: 925px) {
+@media #{$media-925} {
 
     #menu_le-delice{
-        max-width: 500px;
-
-        p {
-            font-size: 14px;
-        }
-
-        .trait {
-            width: 150px;
-        }
-
-        h2 {
-            font-size: 35px;
-        }
-
-        h3 {
-            font-size: 17px;
-        }
+        @include menu_925;
     }
 
     .meal_le-delice {
-        margin: 0;
+        margin: $margin;
     }
 }
 
-@media screen and (max-width: 535px) {
+@media #{$media-535} {
 
     #menu_le-delice {
-        max-width: 300px;
-        margin-bottom: 15%;
-
-        p {
-            font-size: 10px;
-            margin-top: 0;
-        }
-
-        .trait {
-            width: 80px;
-        }
-
-        h2 {
-            font-size: 25px;
-        }
-
-        h3 {
-            font-size: 12px;
-        }
+        @include menu_535;
     }
 
     .meal_le-delice {
-        flex-direction: column;
-        text-align: center;
+        @include meal_535;
     }
 }

@@ -1,5 +1,10 @@
 body {
-    margin: 0;
+    margin: $margin;
+}
+
+a {
+    text-decoration: none;
+    color : inherit;
 }
 
 .menus {
@@ -19,7 +24,7 @@ body {
         justify-content: center;
         text-align: center;
         margin-bottom: 10%;
-        box-shadow: 0px 0px 8px 6px #e8e8e8;
+        box-shadow: $box-shadow;
     }
     .transforme_menu {
         transition-property: transform, opacity;
@@ -34,30 +39,23 @@ body {
     }
 }
 
-a {
-    text-decoration: none;
-    color : inherit;
-}
-
-
-.fas,.fa-music {
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
-    background: linear-gradient(to right, #ff3453 0%, #ff8c5b 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
 .menu_lanote {
-    background-color: #fadbd6;
-    color: #410d16;
+    background-color: $background-note;
+    color: $color-note;
     margin-right: 40px;
+
+    .fas,.fa-music {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+        background: linear-gradient(to right, #ff3453 0%, #ff8c5b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     
     h2 {
         font-family: 'Devonshire', cursive;
-        margin: 0;
+        margin: $margin;
         font-size: 30px;
     }
     
@@ -89,7 +87,7 @@ a {
 }
 
 .menu_ledelice {
-    background-color: #f9f9f9;
+    background-color: $background-delice;
     margin-right: 40px;
     
     h2 {
@@ -110,11 +108,11 @@ a {
 }
 
 .menu_lapalette {
-    background-color: #fdfffd;
+    background-color: $background-palette;
     
     h2 {
         font-family: 'Kaushan Script', cursive;
-        background: linear-gradient(to right, #3d9339 0%, #c0fd87 70%);
+        background: linear-gradient(to right, $color-palette 0%, $color-palette-secondary 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 30px;
@@ -149,7 +147,6 @@ a {
         
         :nth-child(2) {
             animation-delay: 0.3s;
-
         }
         
         :nth-child(3) {
@@ -178,11 +175,11 @@ a {
     }
     
     .menu_lanote {
-        margin-right: 0;
+        margin-right: $margin;
     }
     
     .menu_ledelice {
-        margin-right: 0;
+        margin-right: $margin;
     }
     
     .prochainement {
@@ -194,6 +191,6 @@ a {
     }
     
     .link {
-        margin-right: 0;
+        margin-right: $margin;
     }
 }

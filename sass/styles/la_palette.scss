@@ -1,19 +1,12 @@
-html {
-    margin: 0;
+body {
+    margin: $margin;
 }
 
 #menu_la-palette {
-    max-width: 851px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    background-color: #FDFFFD;
+    @include menus;
+    background-color: $background-palette;
     font-family: 'Kalam', cursive;
-    padding: 3%;
-    margin-bottom: 10%;
-    margin-top: 5%;
-    box-shadow: 0px 0px 2px 5px #e8e8e8;
+    box-shadow: $box-shadow;
 
     .trait {
         width: 300px;
@@ -33,20 +26,17 @@ html {
     text-align: center;
     font-size: 50px;
     font-family: 'Kaushan Script', cursive;
-    background: linear-gradient(to right, #3d9339 0%, #c0fd87 70%);
+    background: linear-gradient(to right, $color-palette 0%, $color-palette-secondary 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 ._underline_la-palette {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include underline_menu;
 
     ._anim-line-la-palette {
         font-weight: normal;
-        background: linear-gradient(to top, #3d9339  2px, transparent 2px) no-repeat;
+        background: linear-gradient(to top, $color-palette 2px, transparent 2px) no-repeat;
         background-size: 0% 100%;
         transition: background-size 1s;
 
@@ -57,62 +47,27 @@ html {
 }
 
 .meal_la-palette {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 6em;
+    @include meal;
 }
 
-@media screen and (max-width: 925px) {
+@media #{$media-925} {
 
     #menu_la-palette {
-        max-width: 500px;
-
-        p {
-            font-size: 15px;
-        }
-
-        .trait {
-            width: 150px;
-        }
-
-        h3 {
-            font-size: 20px;
-        }
+        @include menu_925;
     }
 
     .meal_la-palette {
-        margin: 0;
+        margin: $margin;
     }
 }
 
-@media screen and (max-width: 535px) {
+@media #{$media-535} {
 
     #menu_la-palette {
-        max-width: 300px;
-        margin-bottom: 15%;
-
-        p {
-            font-size: 11px;
-            margin-top: 0;
-        }
-
-        .trait {
-            width: 80px;
-        }
-
-        h2 {
-            font-size: 25px;
-        }
-
-        h3 {
-            font-size: 15px;
-        }
+        @include menu_535;
     }
 
     .meal_la-palette {
-        flex-direction: column;
-        text-align: center;
+        @include meal_535;
     }
 }
-
