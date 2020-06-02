@@ -122,14 +122,8 @@ body {
   font-family: "Kalam", cursive;
   padding-bottom: 5%;
 }
-#menu_la-note p {
-  font-size: 20px;
-}
 #menu_la-note .trait {
   width: 300px;
-}
-#menu_la-note h3 {
-  font-size: 25px;
 }
 
 .title_la-note {
@@ -243,7 +237,7 @@ body {
   }
 
   .title_la-note {
-    padding-top: 2em;
+    padding-top: 1em;
   }
   .title_la-note img {
     width: 60px;
