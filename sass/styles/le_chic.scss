@@ -4,16 +4,11 @@ body {
 
 #menu_le-chic {
     @include menus;
-    max-width: 835px;
-    background-color: #FFF4FE;
+    background-color: $background-chic;
     font-family: 'Playfair Display', serif;
-        
+
     .trait {
-        width: 250px;
-    }
-    
-    p {
-        font-size: 20px;
+        width: 300px;
     }
 }
 
@@ -21,8 +16,7 @@ body {
     text-align: center;
     font-size: 30px;
     font-family: 'Croissant One', cursive;
-    padding: 10% 0;
-    background: linear-gradient(to right, #c77529 0%, #8f5bfe 75%);
+    background: linear-gradient(to right, $color-chic-starter 0%, $color-chic-secondary 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -36,53 +30,36 @@ body {
 }
 
 #starter_lechic {
-    color: #c77529;
+    color: $color-chic-starter;
     padding-bottom: 8%;
 
     ._anim-line-le-chic {
-        font-weight: normal;
-        background: linear-gradient(to top, #c77529 2px, transparent 2px) no-repeat;
-        background-size: 0% 100%;
-        transition: background-size 1s;
-
-        &:hover {
-            background-size: 100% 100%;
-        }
+        background: linear-gradient(to top, $color-chic-starter 2px, transparent 2px) no-repeat;
+        @include anim-underline;
     }
 }
+
 #dish_lechic {
-    color: #AF5D9B;
+    color: $color-chic-dish;
     padding-bottom: 8%;
 
     ._anim-line-le-chic {
-        font-weight: normal;
-        background: linear-gradient(to top, #AF5D9B 2px, transparent 2px) no-repeat;
-        background-size: 0% 100%;
-        transition: background-size 1s;
-
-        &:hover {
-            background-size: 100% 100%;
-        }
+        background: linear-gradient(to top, $color-chic-dish 2px, transparent 2px) no-repeat;
+        @include anim-underline;
     }
 }
 
 #dessert_lechic {
-    color: #7930D3;
+    color: $color-chic-dessert;
 
     ._anim-line-le-chic {
-        font-weight: normal;
-        background: linear-gradient(to top, #7930D3 2px, transparent 2px) no-repeat;
-        background-size: 0% 100%;
-        transition: background-size 1s;
-
-        &:hover {
-            background-size: 100% 100%;
-        }
+        background: linear-gradient(to top, $color-chic-dessert 2px, transparent 2px) no-repeat;
+        @include anim-underline;
     }
 }
 
-@media screen and (max-width: 925px) {
-    
+@media #{$media-925} {
+
     #menu_le-chic {
         @include menu_925;
     }
@@ -92,8 +69,8 @@ body {
     }
 }
 
-@media screen and (max-width: 535px) {
-    
+@media #{$media-535} {
+
     #menu_le-chic {
         @include menu_535;
     }

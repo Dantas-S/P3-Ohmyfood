@@ -6,19 +6,9 @@ body {
     @include menus;
     background-color: $background-palette;
     font-family: 'Kalam', cursive;
-    box-shadow: $box-shadow;
 
     .trait {
         width: 300px;
-    }
-
-    h2 {
-        font-size: 60px;
-        font-weight: normal;
-    }
-
-    h3{
-        font-size: 25px;
     }
 }
 
@@ -26,7 +16,7 @@ body {
     text-align: center;
     font-size: 50px;
     font-family: 'Kaushan Script', cursive;
-    background: linear-gradient(to right, $color-palette 0%, $color-palette-secondary 70%);
+    background: linear-gradient(to right, $color-palette 0%, $color-palette-secondary 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -35,14 +25,8 @@ body {
     @include underline_menu;
 
     ._anim-line-la-palette {
-        font-weight: normal;
         background: linear-gradient(to top, $color-palette 2px, transparent 2px) no-repeat;
-        background-size: 0% 100%;
-        transition: background-size 1s;
-
-        &:hover {
-            background-size: 100% 100%;
-        }
+        @include anim-underline;
     }
 }
 

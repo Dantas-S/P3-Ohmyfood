@@ -48,7 +48,7 @@ a {
         width: 50px;
         height: 50px;
         font-size: 40px;
-        background: linear-gradient(to right, #ff3453 0%, #ff8c5b 100%);
+        background: linear-gradient(to right, #ff3453 0%, #ff8c5b 75%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -67,11 +67,11 @@ a {
 }
 
 .menu_lechic {
-    background-color: #fff4fe;
+    background-color: $background-chic;
     
     h2{
         font-family: 'Croissant One', cursive;
-        background: linear-gradient(to right, #c77529 0%, #8f5bfe 75%);
+        background: linear-gradient(to right, $color-chic-starter 0%, $color-chic-secondary 75%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 20px;
@@ -92,7 +92,7 @@ a {
     
     h2 {
         font-family: 'Parisienne', cursive;
-        background: linear-gradient(to right, #0431df 0%, #0887fb 70%);
+        background: linear-gradient(to right, $color-delice 0%, $color-delice-secondary 75%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 30px;
@@ -144,25 +144,24 @@ a {
         span {
             animation: apparition 1.5s infinite;
         }
-        
+
         :nth-child(2) {
             animation-delay: 0.3s;
         }
-        
+
         :nth-child(3) {
             animation-delay: 0.4s;
         }
-    
+
         @keyframes apparition {
-        
+
             0% {
                 opacity: 0;
             }
-            
+
             100% {
                 opacity: 1;
             }
-        
         }
     }
 }

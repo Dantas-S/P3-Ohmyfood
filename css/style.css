@@ -12,6 +12,7 @@
 /*menu la palette*/
 /*menu le delice*/
 /*menu la note*/
+/*menu le chic */
 header {
   width: 100%;
   display: flex;
@@ -115,9 +116,11 @@ body {
   padding: 0 3% 10% 3%;
   margin-bottom: 10%;
   margin-top: 5%;
+  box-shadow: 0px 0px 8px 6px #e8e8e8;
   background-color: #fadbd6;
   color: #410d16;
   font-family: "Kalam", cursive;
+  padding-bottom: 5%;
 }
 #menu_la-note p {
   font-size: 20px;
@@ -190,19 +193,26 @@ body {
   #menu_la-note {
     max-width: 500px;
   }
+  #menu_la-note p {
+    font-size: 14px;
+  }
   #menu_la-note .trait {
     width: 150px;
   }
-
-  .title_la-note {
-    font-size: 15px;
+  #menu_la-note h2 {
+    font-size: 35px;
   }
+  #menu_la-note h3 {
+    font-size: 17px;
+  }
+
   .title_la-note img {
     width: 80px;
     height: 60px;
   }
-  .title_la-note h2 {
-    font-size: 40px;
+
+  .meal_la-note {
+    margin: 0;
   }
 
   .title_la-note-bottom img {
@@ -219,25 +229,25 @@ body {
     margin-bottom: 15%;
   }
   #menu_la-note p {
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 0;
   }
   #menu_la-note .trait {
     width: 80px;
   }
+  #menu_la-note h2 {
+    font-size: 25px;
+  }
   #menu_la-note h3 {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .title_la-note {
-    font-size: 10px;
+    padding-top: 2em;
   }
   .title_la-note img {
     width: 60px;
     height: 40px;
-  }
-  .title_la-note h2 {
-    font-size: 30px;
   }
 
   .meal_la-note {
@@ -300,7 +310,7 @@ a {
   width: 50px;
   height: 50px;
   font-size: 40px;
-  background: linear-gradient(to right, #ff3453 0%, #ff8c5b 100%);
+  background: linear-gradient(to right, #ff3453 0%, #ff8c5b 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -334,12 +344,12 @@ a {
 }
 
 .menu_ledelice {
-  background-color: #f9f9f9;
+  background-color: #EDEFEF;
   margin-right: 40px;
 }
 .menu_ledelice h2 {
   font-family: "Parisienne", cursive;
-  background: linear-gradient(to right, #0431df 0%, #0887fb 70%);
+  background: linear-gradient(to right, #0431df 0%, #0887fb 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px;
@@ -440,22 +450,18 @@ body {
   padding: 0 3% 10% 3%;
   margin-bottom: 10%;
   margin-top: 5%;
-  max-width: 835px;
-  background-color: #FFF4FE;
+  box-shadow: 0px 0px 8px 6px #e8e8e8;
+  background-color: #fff4fe;
   font-family: "Playfair Display", serif;
 }
 #menu_le-chic .trait {
-  width: 250px;
-}
-#menu_le-chic p {
-  font-size: 20px;
+  width: 300px;
 }
 
 .title_le-chic {
   text-align: center;
   font-size: 30px;
   font-family: "Croissant One", cursive;
-  padding: 10% 0;
   background: linear-gradient(to right, #c77529 0%, #8f5bfe 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -480,8 +486,8 @@ body {
   padding-bottom: 8%;
 }
 #starter_lechic ._anim-line-le-chic {
-  font-weight: normal;
   background: linear-gradient(to top, #c77529 2px, transparent 2px) no-repeat;
+  font-weight: normal;
   background-size: 0% 100%;
   transition: background-size 1s;
 }
@@ -494,8 +500,8 @@ body {
   padding-bottom: 8%;
 }
 #dish_lechic ._anim-line-le-chic {
-  font-weight: normal;
   background: linear-gradient(to top, #AF5D9B 2px, transparent 2px) no-repeat;
+  font-weight: normal;
   background-size: 0% 100%;
   transition: background-size 1s;
 }
@@ -507,8 +513,8 @@ body {
   color: #7930D3;
 }
 #dessert_lechic ._anim-line-le-chic {
-  font-weight: normal;
   background: linear-gradient(to top, #7930D3 2px, transparent 2px) no-repeat;
+  font-weight: normal;
   background-size: 0% 100%;
   transition: background-size 1s;
 }
@@ -516,7 +522,7 @@ body {
   background-size: 100% 100%;
 }
 
-@media screen and (max-width: 925px) {
+@media only screen and (max-width: 925px) {
   #menu_le-chic {
     max-width: 500px;
   }
@@ -537,7 +543,7 @@ body {
     margin: 0;
   }
 }
-@media screen and (max-width: 535px) {
+@media only screen and (max-width: 535px) {
   #menu_le-chic {
     max-width: 300px;
     margin-bottom: 15%;
@@ -574,11 +580,9 @@ body {
   padding: 0 3% 10% 3%;
   margin-bottom: 10%;
   margin-top: 5%;
-  background-color: #f9f9f9;
+  box-shadow: 0px 0px 8px 6px #e8e8e8;
+  background-color: #EDEFEF;
   font-family: "Kalam", cursive;
-}
-#menu_le-delice p {
-  font-size: 18px;
 }
 #menu_le-delice .trait {
   width: 300px;
@@ -588,7 +592,7 @@ body {
   text-align: center;
   font-size: 45px;
   font-family: "Parisienne", cursive;
-  background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
+  background: linear-gradient(to right, #0431df 0%, #0887fb 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -600,8 +604,8 @@ body {
   align-items: center;
 }
 ._underline_le-delice ._anim-line-le-delice {
-  font-weight: normal;
   background: linear-gradient(to top, #0887fb 2px, transparent 2px) no-repeat;
+  font-weight: normal;
   background-size: 0% 100%;
   transition: background-size 1s;
 }
@@ -674,26 +678,19 @@ body {
   padding: 0 3% 10% 3%;
   margin-bottom: 10%;
   margin-top: 5%;
+  box-shadow: 0px 0px 8px 6px #e8e8e8;
   background-color: #FDFFFD;
   font-family: "Kalam", cursive;
-  box-shadow: 0px 0px 8px 6px #e8e8e8;
 }
 #menu_la-palette .trait {
   width: 300px;
-}
-#menu_la-palette h2 {
-  font-size: 60px;
-  font-weight: normal;
-}
-#menu_la-palette h3 {
-  font-size: 25px;
 }
 
 .title_la-palette {
   text-align: center;
   font-size: 50px;
   font-family: "Kaushan Script", cursive;
-  background: linear-gradient(to right, #3d9339 0%, #c0fd87 70%);
+  background: linear-gradient(to right, #3d9339 0%, #c0fd87 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -705,8 +702,8 @@ body {
   align-items: center;
 }
 ._underline_la-palette ._anim-line-la-palette {
-  font-weight: normal;
   background: linear-gradient(to top, #3d9339 2px, transparent 2px) no-repeat;
+  font-weight: normal;
   background-size: 0% 100%;
   transition: background-size 1s;
 }

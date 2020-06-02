@@ -4,12 +4,8 @@ body {
 
 #menu_le-delice {
     @include menus;
-    background-color: #f9f9f9;
+    background-color: $background-delice;
     font-family: 'Kalam', cursive;
-
-    p {
-        font-size: 18px;
-    }
 
     .trait {
         width: 300px;
@@ -20,24 +16,17 @@ body {
     text-align: center;
     font-size: 45px;
     font-family: 'Parisienne', cursive;
-    background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
+    background: linear-gradient(to right, $color-delice 0%, $color-delice-secondary 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 ._underline_le-delice {
     @include underline_menu;
 
     ._anim-line-le-delice {
-        font-weight: normal;
-        background: linear-gradient(to top, #0887fb 2px, transparent 2px) no-repeat;
-        background-size: 0% 100%;
-        transition: background-size 1s;
-
-        &:hover {
-            background-size: 100% 100%;
-        }
+        background: linear-gradient(to top, $color-delice-secondary 2px, transparent 2px) no-repeat;
+        @include anim-underline;
     }
 }
 
