@@ -15,6 +15,7 @@ body {
 .title_la-palette {
     text-align: center;
     font-size: 50px;
+    padding: 40px 0;
     font-family: 'Kaushan Script', cursive;
     background: linear-gradient(to right, $color-palette 0%, $color-palette-secondary 75%);
     -webkit-background-clip: text;
@@ -32,6 +33,7 @@ body {
 
 .meal_la-palette {
     @include meal;
+    margin: 0 64px;
 }
 
 @media #{$media-925} {

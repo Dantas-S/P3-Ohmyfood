@@ -15,6 +15,7 @@ body {
 .title_le-chic {
     text-align: center;
     font-size: 30px;
+    padding: 40px 0;
     font-family: 'Croissant One', cursive;
     background: linear-gradient(to right, $color-chic-starter 0%, $color-chic-secondary 75%);
     -webkit-background-clip: text;
@@ -27,6 +28,7 @@ body {
 
 .meal_le-chic {
     @include meal;
+    margin: 0 64px;
 }
 
 #starter_lechic {
