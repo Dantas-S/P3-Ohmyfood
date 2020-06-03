@@ -277,20 +277,21 @@ a {
 .menus .menu_content {
   width: 300px;
   height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
   margin-bottom: 10%;
   box-shadow: 0px 0px 8px 6px #e8e8e8;
 }
-.menus .transforme_menu {
+.menus .menu_content .transforme_menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transition-property: transform, opacity;
   transition-duration: 500ms;
   transition-delay: 600ms;
   transition-timing-function: linear;
 }
-.menus .transforme_menu:hover {
+.menus .menu_content .transforme_menu:hover {
   transform: scale(1.1);
   opacity: 0.5;
 }
