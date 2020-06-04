@@ -455,11 +455,13 @@ body {
 .title_le-chic {
   text-align: center;
   font-size: 30px;
-  padding: 40px 0;
   font-family: "Croissant One", cursive;
+}
+.title_le-chic h2 {
   background: linear-gradient(to right, #c77529 0%, #8f5bfe 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 40px 0;
 }
 
 ._underline_le-chic {
@@ -586,11 +588,13 @@ body {
 .title_le-delice {
   text-align: center;
   font-size: 45px;
-  padding: 40px 0;
   font-family: "Parisienne", cursive;
+}
+.title_le-delice h2 {
   background: linear-gradient(to right, #0431df 0%, #0887fb 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 40px 0;
 }
 
 ._underline_le-delice {
@@ -685,11 +689,13 @@ body {
 .title_la-palette {
   text-align: center;
   font-size: 50px;
-  padding: 40px 0;
   font-family: "Kaushan Script", cursive;
+}
+.title_la-palette h2 {
   background: linear-gradient(to right, #3d9339 0%, #c0fd87 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 40px 0;
 }
 
 ._underline_la-palette {

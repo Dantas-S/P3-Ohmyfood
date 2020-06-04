@@ -15,11 +15,14 @@ body {
 .title_le-delice {
     text-align: center;
     font-size: 45px;
-    padding: 40px 0;
     font-family: 'Parisienne', cursive;
-    background: linear-gradient(to right, $color-delice 0%, $color-delice-secondary 75%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+        h2 {
+            background: linear-gradient(to right, $color-delice 0%, $color-delice-secondary 75%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 40px 0;
+        }
 }
 
 ._underline_le-delice {
