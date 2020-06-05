@@ -72,7 +72,7 @@ body {
     }
 }
 
-@media screen and (max-width: 857px) {
+@media #{$media-925} {
     
     #menu_la-note {
         @include menu_925;
@@ -103,7 +103,7 @@ body {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media #{$media-535} {
     
     #menu_la-note {
         @include menu_535;
